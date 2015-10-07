@@ -17,8 +17,8 @@ NON-RESPONSIVE START
   width: 960px;
 }
 .navbar-nav > li > a {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 /* ALTERAR APENAS ESTAS VARIAVEIS DE ACORDO COM O PROJETO END */
 /* Finesse the page header spacing */
@@ -83,7 +83,7 @@ NON-RESPONSIVE START
 .navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
 .navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
   color: #fff !important;
-  background-color: #428bca !important;
+  background-color: #78af4b !important;
 }
 .navbar .navbar-nav .open .dropdown-menu > .disabled > a,
 .navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -95,11 +95,11 @@ NON-RESPONSIVE START
 NON-RESPONSIVE END
 */
 ::selection {
-  background-color: #812d2a;
+  background-color: #78af4b;
   color: #FFF;
 }
 ::-moz-selection {
-  background-color: #812d2a;
+  background-color: #78af4b;
   color: #FFF;
 }
 small {
@@ -116,8 +116,16 @@ button {
 /*
 FONTS START
 **********************************************************************************************/
-.box-chamada {
-  font-family: 'robotoblack', Arial, sans-serif;
+strong,
+.navbar-form .form-control,
+.navbar-inverse,
+.btn {
+  font-family: 'GothamBold', Arial, sans-serif;
+  font-weight: normal;
+}
+.edicao-atual,
+.menu-footer {
+  font-family: 'GothamBlack', Arial, sans-serif;
   font-weight: normal;
 }
 /**********************************************************************************************
@@ -126,6 +134,170 @@ FONTS END
 /*
 ESTRUTURA START
 **********************************************************************************************/
+.extra-header,
+.extra-central,
+.extra-footer {
+  min-width: 960px;
+}
+.extra-header .site-header .line-1 {
+  height: 227px;
+  background: url(../imagem/site/bg-header.jpg) no-repeat center top;
+}
+.extra-header .site-header .line-1 .left {
+  float: left;
+}
+.extra-header .site-header .line-1 .right {
+  float: right;
+  padding: 40px 0 0;
+}
+.extra-header .navbar {
+  border: 0;
+  margin: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.extra-header .navbar-inverse {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.extra-header .navbar-inverse .nav {
+  width: 100%;
+}
+.extra-header .navbar-inverse .nav > li + li {
+  border-left: 1px solid #7b9f5d;
+}
+.extra-header .navbar-inverse .nav > li.envie-artigo {
+  float: right;
+  font-size: 11px;
+  border: 0;
+  padding: 11px 0;
+}
+.extra-header .navbar-inverse .nav > li.envie-artigo .icone {
+  display: inline-block;
+  padding: 6px 8px;
+  background: #fedd00;
+}
+.extra-header .navbar-inverse .nav > li.envie-artigo .text {
+  display: inline-block;
+  padding: 6px 10px;
+}
+.extra-header .navbar-inverse .nav > li.envie-artigo a {
+  color: #fedd00;
+  border: 1px solid #fedd00;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  padding: 0;
+  overflow: hidden;
+}
+.extra-header .navbar-inverse .nav > li.envie-artigo a:hover .text {
+  text-decoration: underline;
+}
+.extra-header .subtitle {
+  color: #FFF;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.extra-header .navbar-form {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: #FFF;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin: 8px 0 15px;
+  padding: 0;
+}
+.extra-header .navbar-form .form-control {
+  background: none;
+  border: 0;
+  box-shadow: none;
+  color: #FFF;
+  font-size: 12px;
+}
+.extra-header .navbar-form .form-control::-moz-placeholder {
+  color: #FFF;
+  text-transform: uppercase;
+  opacity: 1;
+}
+.extra-header .navbar-form .form-control:-ms-input-placeholder {
+  color: #FFF;
+  text-transform: uppercase;
+}
+.extra-header .navbar-form .form-control::-webkit-input-placeholder {
+  color: #FFF;
+  text-transform: uppercase;
+}
+.extra-header .navbar-form .btn {
+  background: none;
+  border: 0;
+  color: #FFF;
+}
+.extra-footer {
+  margin: 50px 0 0;
+}
+.extra-footer .site-footer {
+  background: #656661;
+  font-size: 14px;
+  padding: 44px 0 20px;
+}
+.extra-footer .site-footer,
+.extra-footer .site-footer a {
+  color: #FFF;
+}
+.extra-footer .site-direitos {
+  border-top: 5px solid #c5cf9b;
+  padding: 20px 0;
+}
+.extra-footer .site-direitos .right {
+  padding: 20px 0;
+}
+.extra-footer .parceiros-footer a {
+  display: inline-block;
+  vertical-align: middle;
+}
+.extra-footer .parceiros-footer a + a {
+  margin-left: 30px;
+}
+.extra-footer .menu-footer {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.extra-footer .menu-footer > li a {
+  color: #98c176;
+}
+.extra-footer .menu-footer > li + li {
+  margin-top: 10px;
+}
+.extra-footer .footer-header {
+  display: block;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin: 0 0 15px;
+}
+.extra-footer .footer-header.destaque {
+  color: #dfe4c6;
+  font-size: 21px;
+}
+.extra-footer .phone .destaque {
+  font-size: 24px;
+  display: block;
+  line-height: .9;
+}
+.extra-footer .social-footer {
+  font-size: 24px;
+}
+.extra-footer .social-footer a {
+  display: inline-block;
+}
+.extra-footer .social-footer a + a {
+  margin-left: 15px;
+}
+.extra-footer .footer-subheader {
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 15px;
+}
 /**********************************************************************************************
 ESTRUTURA END
 */
@@ -150,6 +322,89 @@ CLASSES START
   -moz-border-radius: 150px;
   border-radius: 150px;
 }
+.box-share,
+.box-share > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+.box-share .fb_iframe_widget span {
+  vertical-align: top !important;
+}
+.cycle-slideshow li * {
+  white-space: normal;
+}
+.cycle-nav span {
+  display: inline-block;
+  cursor: pointer;
+}
+.cycle-galeria {
+  margin: 0 0 30px;
+}
+.cycle-galeria,
+.cycle-galeria .cycle-slideshow,
+.cycle-galeria .cycle-slideshow li,
+.cycle-galeria .link {
+  width: 100%;
+  height: 460px;
+}
+.cycle-galeria .link {
+  display: block;
+  background: #000;
+  background-size: cover;
+  text-align: center;
+}
+.cycle-galeria .imagem {
+  display: inline-block;
+  max-height: 440px;
+}
+.cycle-galeria .cycle-nav {
+  text-align: center;
+}
+.cycle-galeria .cycle-nav span {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  text-indent: -1000px;
+  overflow: hidden;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  background: #AEAEAE;
+}
+.cycle-galeria .cycle-nav span + span {
+  margin-left: 10px;
+}
+.cycle-galeria .cycle-nav span.cycle-pager-active {
+  background: #78af4b;
+}
+.edicao-atual {
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  font-size: 14px;
+  overflow: hidden;
+}
+.edicao-atual .ano,
+.edicao-atual .edicao {
+  display: block;
+  line-height: 1;
+}
+.edicao-atual .faixa {
+  color: #FFF;
+  margin-top: -15px;
+  padding-top: 80px;
+}
+.edicao-atual .ano {
+  color: #b1b2aa;
+  font-size: 52px;
+}
+.edicao-atual .edicao {
+  color: #656663;
+  font-size: 48px;
+}
+.form-control {
+  box-shadow: none;
+}
 .imagem {
   display: inline-block;
   overflow: hidden;
@@ -169,6 +424,46 @@ CLASSES START
   vertical-align: middle;
   display: inline-block;
   background-image: url(../imagem/site/ycon.png);
+}
+.panel-default {
+  box-shadow: none;
+  border: 0;
+}
+.panel-default .panel-heading {
+  background: none;
+  border: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.panel-default .panel-heading + .panel-collapse > .panel-body {
+  border: 0;
+  padding: 0 0 15px;
+}
+.panel-default .panel-title {
+  text-transform: uppercase;
+}
+.panel-default .panel-title a {
+  display: block;
+  background: url(../imagem/site/icon/double-arrow-up.png) no-repeat right center;
+}
+.panel-default .panel-title a.collapsed {
+  background-image: url(../imagem/site/icon/double-arrow-down.png);
+}
+.panel-default + .panel-default {
+  background: url(../imagem/site/dashed.png) repeat-x top left;
+}
+.pixel {
+  width: 100%;
+  height: 100%;
+}
+.page-header {
+  border-bottom-width: 2px;
+  margin-top: 64px;
+}
+.page-header h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #868686;
 }
 .space {
   width: 1%;

@@ -1,0 +1,10 @@
+.ycon{ background:url("ycon.png") top left no-repeat; }
+.ycon-faixa{ width:60px; height:133px; background-position:-1px -1px; }
+.ycon-marker-white{ width:23px; height:34px; background-position:-1px -135px; }
+.ycon-send{ width:21px; height:22px; background-position:-25px -135px; }
+.ycon-news{ width:29px; height:22px; background-position:-1px -170px; }
+.ycon-phone-white{ width:16px; height:19px; background-position:-31px -170px; }
+.ycon-mail-white{ width:20px; height:16px; background-position:-1px -193px; }
+.ycon-double-arrow-up{ width:16px; height:15px; background-position:-22px -193px; }
+.ycon-double-arrow-down{ width:16px; height:15px; background-position:-39px -193px; }
+

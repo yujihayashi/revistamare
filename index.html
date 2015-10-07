@@ -16,6 +16,7 @@
 	<meta property="og:site_name" content="" />
 	<meta property="og:type" content="website" />
 	<link rel="stylesheet" href="/library/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/fonts/stylesheet.css">
 	<link rel="stylesheet" href="/imagem/site/ycon.css">
 	<link rel="stylesheet" href="/css/site.css">
@@ -34,66 +35,132 @@
 		<div class="site-geral">
 			<header class="extra-header">
 				<div class="site-header">
-					<div class="container">
-						<nav class="navbar navbar-default" role="navigation">
-							<div class="navbar-header">
-								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-								<a class="navbar-brand" href="/" title="Voltar para a página inicial">Title</a>
-							</div>
-							<div class="collapse navbar-collapse navbar-ex1-collapse">
-								<ul class="nav navbar-nav">
-									<li class="active"><a href="#">Link</a></li>
-									<li><a href="#">Link</a></li>
-								</ul>
-								<form class="navbar-form navbar-left" role="search">
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Search">
-									</div>
-									<button type="submit" class="btn btn-default">Submit</button>
-								</form>
-								<ul class="nav navbar-nav navbar-right">
-									<li><a href="#">Link</a></li>
-									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-										<ul class="dropdown-menu">
-											<li><a href="#">Action</a></li>
-											<li><a href="#">Another action</a></li>
-											<li><a href="#">Something else here</a></li>
-											<li><a href="#">Separated link</a></li>
-										</ul>
-									</li>
-								</ul>
-							</div><!-- /.navbar-collapse -->
-						</nav>
-					</div> <!-- .container -->
+					<nav class="navbar navbar-default" role="navigation">
+						<div class="line-1">
+							<div class="container">
+								<div class="left">
+								</div> <!-- .left -->
+								<div class="right">
+									<span class="subtitle">Revista eletrônica - <strong>ISSN 2237</strong></span>
+									<form class="navbar-form" role="search">
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Pesquise">
+										</div>
+										<button type="submit" class="btn btn-default"><span class="sr-only">Enviar</span><span class="fa fa-search"></span></button>
+									</form>
+								</div> <!-- .right -->
+								<div class="navbar-header">
+									<a class="navbar-brand" href="/" title="Voltar para a página inicial"><img src="/imagem/site/revista-mare.png" alt="Marca Revista Maré"></a>
+								</div>
+							</div> <!-- .container -->
+						</div> <!-- .line-1 -->
+						<div class="line-2 navbar navbar-inverse">
+							<div class="container">
+								<div class="collapse navbar-collapse navbar-ex1-collapse">
+									<ul class="nav navbar-nav">
+										<li class="active"><a href="/">Home</a></li>
+										<li><a href="#">Sobre</a></li>
+										<li class="dropdown">
+											<a href="javascript:void(0);" data-toggle="dropdown" class="dropdown-toggle">Edições <b class="caret"></b></a>
+											<ul class="dropdown-menu">
+												<li><a href="#">Atual</a></li>
+												<li><a href="#">Anteriores</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Expediente</a></li>
+										<li><a href="#">Normas de publicação</a></li>
+										<li><a href="#">Contato</a></li>
+										<li class="envie-artigo"><a href="#"><span class="icone"><span class="ycon-send"></span></span> <span class="text">Envie seu artigo</span></a></li>
+									</ul>
+								</div><!-- /.navbar-collapse -->
+							</div> <!-- .container -->
+						</div> <!-- .line-2 -->
+					</nav>
 				</div> <!-- .site-header -->
 			</header> <!-- .extra-header -->
 			<div class="extra-central">
 				<div class="site-central" id="content">
 					<div class="container">
-						<div class="box-banner">
-							<div class="cycle-btn">
-								<div class="container">
-									<a href="javascript:void(0);" class="cycle-prev"><span class="icone-nav-left"></span><span class="sr-only">Banner anterior</span></a>
-									<a href="javascript:void(0);" class="cycle-next"><span class="icone-nav-right"></span><span class="sr-only">Próximo banner</span></a>
-
-									<div class="cycle-nav"></div> <!-- .cycle-nav -->
-								</div> <!-- .container -->
-							</div> <!-- .cycle-btn -->
-							<ul class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="5000" data-cycle-speed="1800" data-cycle-slides="> li" data-cycle-pager=".box-banner .cycle-nav" data-cycle-next=".box-banner .cycle-next" data-cycle-prev=".box-banner .cycle-prev" data-cycle-easing="easeInOutExpo" data-cycle-log="false" data-cycle-swipe="true">
-								<li>
-									banner 01
-								</li>
-								<li>
-									banner 01
-								</li>
-							</ul>
-						</div> <!-- .box-banner -->
+						<div class="row">
+							<div class="col-xs-2">
+								<div class="edicao-atual">
+									<span class="ycon-faixa faixa">Atual</span>
+									<span class="ano">2015</span>
+									<span class="edicao">nº05</span>
+								</div> <!-- .edicao-atual -->
+							</div> <!-- .col-xs-2 -->
+							<div class="col-xs-10">
+								<div class="page-header">
+									<h1 class="sr-only">Revista Maré - Memórias, imagens e saberes do campo</h1>
+									<h2><span class="ycon-news"></span> Nesta edição</h2>
+								</div> <!-- .page-header -->
+								<div class="panel-group" id="sumario" role="tablist" aria-multiselectable="true">
+									<div class="panel panel-default">
+										<div class="panel-heading" role="tab" id="headingOne">
+											<h2 class="panel-title">
+												<a role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+													Artigos
+												</a>
+											</h2>
+										</div>
+										<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+											<div class="panel-body">
+												<ul class="lista-artigos">
+													<li>
+														<h3 class="title"><a href="#" title="Veja detalhes">
+															Educação do Campo e o Professor: reflexões acerca do perfil do/a professor/a de classes multisseriadas
+														</a></h3>
+														<div class="desc">
+															<p>
+																Eliane Miranda Costa e Georgina Negrão Kalife Cordeiro e Maria de Nazaré Vilhena
+															</p>
+														</div> <!-- .desc -->
+													</li>
+													<li>
+														<h3 class="title"><a href="#" title="Veja detalhes">
+															Educação do Campo e o Professor: reflexões acerca do perfil do/a professor/a de classes multisseriadas
+														</a></h3>
+														<div class="desc">
+															<p>
+																Eliane Miranda Costa e Georgina Negrão Kalife Cordeiro e Maria de Nazaré Vilhena
+															</p>
+														</div> <!-- .desc -->
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div> <!-- .panel -->
+									<div class="panel panel-default">
+										<div class="panel-heading" role="tab" id="headingTwo">
+											<h2 class="panel-title">
+												<a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+													Collapsible Group Item #2
+												</a>
+											</h2>
+										</div>
+										<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+											<div class="panel-body">
+												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+											</div>
+										</div>
+									</div>
+									<div class="panel panel-default">
+										<div class="panel-heading" role="tab" id="headingThree">
+											<h2 class="panel-title">
+												<a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+													Collapsible Group Item #3
+												</a>
+											</h2>
+										</div>
+										<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+											<div class="panel-body">
+												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div> <!-- .col-xs-10 -->
+						</div> <!-- .row -->
 					</div> <!-- .container -->
 				</div> <!-- .site-central -->
 			</div> <!-- .extra-central -->
@@ -101,9 +168,84 @@
 				<div class="extra-footer">
 					<div class="site-footer">
 						<div class="container">
-							<a href="http://www.libradesign.com.br" target="_blank" title="Libra Design"><img src="/imagem/site/libra.png" alt="Logotipo Libra Design +Tech"></a>
+							<div class="row">
+								<div class="col-xs-2">
+									<ul class="menu-footer">
+										<li><a href="#">Home</a></li>
+										<li><a href="#">Sobre</a></li>
+										<li><a href="#">Edições</a></li>
+										<li><a href="#">Expediente</a></li>
+										<li><a href="#">Normas de publicação</a></li>
+										<li><a href="#">Contato</a></li>
+									</ul>
+								</div> <!-- .col-xs-2 -->
+								<div class="col-xs-3">
+									<h3 class="footer-header destaque">Sobre a<br> Revista Maré</h3>
+									<p>
+										Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. 
+									</p>
+									<div class="social-footer">
+										<a href="#" title="Acesse nosso Facebook" target="_blank"><span class="sr-only">Facebook</span><span class="fa fa-facebook"></span></a>
+										<a href="#" title="Acesse nosso Instagram" target="_blank"><span class="sr-only">Instagram</span><span class="fa fa-instagram"></span></a>
+										<a href="#" title="Acesse nosso Twitter" target="_blank"><span class="sr-only">Twitter</span><span class="fa fa-twitter"></span></a>
+										<a href="#" title="Acesse nosso Youtube" target="_blank"><span class="sr-only">Youtube</span><span class="fa fa-youtube"></span></a>
+									</div> <!-- .social-footer -->
+								</div> <!-- .col-xs-3 -->
+								<div class="col-xs-3">
+									<h3 class="footer-header">Endereço</h3>
+									<div class="media">
+										<span class="pull-left"><span class="ycon-marker-white"></span></span>
+										<div class="media-body">
+											<span class="footer-subheader">Sede do Fórum Paraense de Educação do Campo.</span>
+										</div> <!-- .media-body -->
+									</div> <!-- .media -->
+									<p>
+										Instituto de Ciências da Educação da Universidade Federal do Pará, 2º andar - Campus Universitário do Guamá  - Setor Profissional
+									</p>
+								</div> <!-- .col-xs-3 -->
+								<div class="col-xs-4">
+									<h3 class="footer-header">Fale conosco</h3>
+									<ul class="media-list">
+										<li class="media phone">
+											<span class="pull-left"><span class="ycon-phone-white"></span></span>
+											<div class="media-body">
+												<span class="destaque">(91) 3201-7572</span>
+												<span>(91) 3201-7648 • Fax</span>
+											</div> <!-- .media-body -->
+										</li>
+										<li class="media mail">
+											<span class="pull-left"><span class="ycon-mail-white"></span></span>
+											<div class="media-body">
+												<a href="mailto:fpec@grupos.com.br" title="Envie-nos um e-mail!">fpec@grupos.com.br</a>
+											</div> <!-- .media-body -->
+										</li>
+										<li class="media mail">
+											<span class="pull-left"><span class="ycon-mail-white"></span></span>
+											<div class="media-body">
+												<a href="mailto:portaleducampoparaense@gmail.com" title="Envie-nos um e-mail!">portaleducampoparaense@gmail.com</a>
+											</div> <!-- .media-body -->
+										</li>
+									</ul>
+								</div> <!-- .col-xs-4 -->
+							</div> <!-- .row -->
 						</div> <!-- .container -->
 					</div> <!-- .site-footer -->
+					<div class="site-direitos">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-6 left">
+									<div class="parceiros-footer">
+										<a href="http://ufpa.br" target="_blank" title="Clique para acessar o site da UFPA"><img src="/imagem/site/UFPA.jpg" alt="Marca da UFPA"></a>
+										<a href="http://www.educampoparaense.com.br" target="_blank" title="Clique para acessar o site do Educampo Paraense"><img src="/imagem/site/educampo-paraense.jpg" alt="Marca do Educampo Paraense"></a>
+									</div>
+								</div> <!-- .col-xs-6 -->
+								<div class="col-xs-6 text-right right">
+									<small class="text-muted">Copyright © Revista Maré 2015. Todos os direitos reservados </small><br>
+									<a href="http://www.libradesign.com.br" target="_blank" title="Libra Design"><img src="/imagem/site/libra.png" alt="Logotipo Libra Design +Tech"></a>
+								</div> <!-- .col-xs-6 -->
+							</div> <!-- .row -->
+						</div> <!-- .container -->
+					</div> <!-- .site-direitos -->
 				</div> <!-- .extra-footer -->
 			</footer>
 		</div> <!-- .site-geral -->

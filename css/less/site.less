@@ -1,5 +1,5 @@
-@primary-color: #812d2a; 
-@secondary-color: #089bdf;  
+@primary-color: #78af4b; 
+@secondary-color: #fedd00;  
 @third-color: #b6967e;  
 /*
 FUNÇÕES PADRÕES START
@@ -28,7 +28,7 @@ NON-RESPONSIVE START
 **********************************************************************************************/
 /* ALTERAR APENAS ESTAS VARIAVEIS DE ACORDO COM O PROJETO START */
 .container {max-width: none !important;width: 960px;}
-.navbar-nav > li > a {padding-top: 15px;padding-bottom:15px;}
+.navbar-nav > li > a {padding-top: 20px;padding-bottom:20px;}
 /* ALTERAR APENAS ESTAS VARIAVEIS DE ACORDO COM O PROJETO END */
 /* Finesse the page header spacing */.page-header {margin-bottom: 30px;}.page-header .lead {margin-bottom: 10px;}/* Non-responsive overrides** Utilitze the following CSS to disable the responsive-ness of the container,* grid system, and navbar.*//* Reset the container *//* Always float the navbar header */.navbar-header {float: left;}/* Undo the collapsing navbar */.navbar-collapse {display: block !important;height: auto !important;padding-bottom: 0;overflow: visible !important;}.navbar-toggle {display: none;}.navbar-collapse {border-top: 0;}.navbar-brand {margin-left: -15px;}/* Always apply the floated nav */.navbar-nav {float: left;margin: 0;}.navbar-nav > li {float: left;}/* Redeclare since we override the float above */.navbar-nav.navbar-right {float: right;}/* Undo custom dropdowns */.navbar .navbar-nav .open .dropdown-menu {position: absolute;float: left;background-color: #fff;border: 1px solid #cccccc;border: 1px solid rgba(0, 0, 0, 0.15);border-width: 0 1px 1px;border-radius: 0 0 4px 4px;-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);}.navbar-default .navbar-nav .open .dropdown-menu > li > a {color: #333;}.navbar .navbar-nav .open .dropdown-menu > li > a:hover,.navbar .navbar-nav .open .dropdown-menu > li > a:focus,.navbar .navbar-nav .open .dropdown-menu > .active > a,.navbar .navbar-nav .open .dropdown-menu > .active > a:hover,.navbar .navbar-nav .open .dropdown-menu > .active > a:focus {color: #fff !important;background-color: @primary-color !important;}.navbar .navbar-nav .open .dropdown-menu > .disabled > a,.navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,.navbar .navbar-nav .open .dropdown-menu > .disabled > a:focus {color: #999 !important;background-color: transparent !important;}
 /**********************************************************************************************
@@ -42,7 +42,8 @@ a, button  {transition: all 0.25s ease 0s;}
 /*
 FONTS START
 **********************************************************************************************/
-.btn {font-family: 'robotoblack', Arial, sans-serif;font-weight: normal;}
+strong, .navbar-form .form-control, .navbar-inverse, .btn {font-family: 'GothamBold', Arial, sans-serif;font-weight: normal;}
+.edicao-atual, .menu-footer {font-family: 'GothamBlack', Arial, sans-serif;font-weight: normal;}
 /**********************************************************************************************
 FONTS END
 */
@@ -51,14 +52,86 @@ ESTRUTURA START
 **********************************************************************************************/
 .extra-header, .extra-central, .extra-footer {min-width: 960px;}
 .extra-header {
-	.site-header {}
-	.navbar {border:0;margin:0;.border-radius(0);}
+
+	.site-header {
+        .line-1 {
+            height: 227px;background: url(../imagem/site/bg-header.jpg) no-repeat center top;
+            .left {float: left;}
+            .right {float: right;padding:40px 0 0;}
+        }
+    }
+    .navbar {border:0;margin:0;.border-radius(0);}
+    .navbar-inverse {
+        text-transform: uppercase;font-size: 14px;
+        .nav {
+            width: 100%;
+            > li {
+                + li {border-left: 1px solid #7b9f5d;}
+                &.envie-artigo {
+                    float: right;font-size: 11px;border:0;padding:11px 0;
+                    .icone {display: inline-block;padding:6px 8px;background: @secondary-color;}
+                    .text {display: inline-block;padding:6px 10px;}
+                    a {
+                        color: @secondary-color;border:1px solid @secondary-color;.border-radius(8px);padding:0;overflow: hidden;
+                        &:hover {
+                            .text {text-decoration: underline;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .subtitle {color: #FFF;font-size: 12px;text-transform: uppercase;}
+    .navbar-form {
+        border:2px solid rgba(255, 255, 255, .5);color: #FFF;.border-radius(5px);margin:8px 0 15px;padding:0;
+        .form-control {background: none;border:0;box-shadow:none;color: #FFF;font-size: 12px;}
+        .form-control::-moz-placeholder {color: #FFF;text-transform: uppercase;opacity: 1;}
+        .form-control:-ms-input-placeholder {color: #FFF;text-transform: uppercase;}
+        .form-control::-webkit-input-placeholder {color: #FFF;text-transform: uppercase;}
+        .btn {background: none;border:0;color: #FFF;}
+    }
 }
 .extra-central {
 	.site-central {}
 }
 .extra-footer {
-	.site-footer {}
+    margin:50px 0 0;
+    .site-footer {
+        background: #656661;font-size: 14px;padding:44px 0 20px;
+        &, a {color: #FFF;}
+    }
+    .site-direitos {
+        border-top:5px solid #c5cf9b;padding:20px 0;
+        .right {padding:20px 0;}
+    }
+    .parceiros-footer {
+        a {
+            display: inline-block;vertical-align: middle;
+            + a {margin-left: 30px;}
+        }
+    }
+    .menu-footer {
+        font-size: 13px;text-transform: uppercase;
+        > li {
+            a {color: #98c176;}
+            + li {margin-top:10px;}
+        }
+    }
+    .footer-header {
+        display: block;text-transform: uppercase;font-size: 18px;margin:0 0 15px;
+        &.destaque {color: #dfe4c6;font-size: 21px;}
+    }
+    .phone {
+        .destaque {font-size: 24px;display: block;line-height: .9;}
+    }
+    .social-footer {
+        font-size: 24px;
+        a {
+            display: inline-block;
+            + a {margin-left: 15px;}
+        }
+    }
+    .footer-subheader {text-transform: uppercase;display: inline-block;margin-bottom: 15px;}
 }
 /**********************************************************************************************
 ESTRUTURA END
@@ -95,6 +168,13 @@ CLASSES START
         }
     }
 }
+.edicao-atual {
+    text-transform: uppercase;text-align: center;display: block;font-size: 14px;overflow: hidden;
+    .ano, .edicao {display: block;line-height: 1;}
+    .faixa {color: #FFF;margin-top:-15px;padding-top:80px;}
+    .ano {color: #b1b2aa;font-size: 52px;}
+    .edicao {color: #656663;font-size: 48px;}
+}
 
 .form-control {box-shadow:none;}
 
@@ -103,8 +183,28 @@ CLASSES START
 .inline-block {display:inline-block;}
 [class^='ycon-'], [class*='ycon-'] {background-repeat:no-repeat;vertical-align:middle;display:inline-block;background-image:url(../imagem/site/ycon.png);}
 
-
+.panel-default {
+    box-shadow:none;border:0;
+    .panel-heading {
+        background: none;border:0;padding-left: 0;padding-right: 0;
+        +     .panel-collapse {
+            > .panel-body {border:0;padding:0 0 15px;}
+        }
+    }
+    .panel-title {
+        text-transform: uppercase;
+        a {
+            display: block;background: url(../imagem/site/icon/double-arrow-up.png) no-repeat right center;
+            &.collapsed {background-image:url(../imagem/site/icon/double-arrow-down.png);}
+        }
+    }
+    + .panel-default {background:url(../imagem/site/dashed.png) repeat-x top left;}
+}
 .pixel {width: 100%;height: 100%;}
+.page-header {
+    border-bottom-width: 2px;margin-top:64px;
+    h2 {font-size: 14px;text-transform: uppercase;color:#868686;}
+}
 
 .space {width:1%;display:inline-block;height:100%;vertical-align:middle;}
 .relative {position: relative;}
@@ -122,14 +222,14 @@ JQUERY UI END
 
 }
 @media (max-width: 767px) {
- /*    .site-geral:before {content:"TABLET";}*/
+   /*    .site-geral:before {content:"TABLET";}*/
 }
 @media (max-width: 480px) {
- /*#GERAL:before {content:"MOBILE";}*/
+   /*#GERAL:before {content:"MOBILE";}*/
 }
 @media (min-width: 768px) and (max-width: 980px) {
 
 }
 @media (min-width: 981px) and (max-width: 1200px) {
- /*#GERAL:before {content:"ACIMA DE TABLET";}*/
+   /*#GERAL:before {content:"ACIMA DE TABLET";}*/
 }
